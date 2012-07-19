@@ -1,0 +1,19 @@
+{
+  "name": "empirejs",
+  "description": "Homepage for empirejs.org",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/indexzero/empirejs.org.git"
+  },
+  "dependencies": {
+    "http-server": "0.5.0"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/http-server"
+  },
+  "subdomain": "empirejs",
+  "engines": {
+    "node": "v0.6.x"
+  }
+}
