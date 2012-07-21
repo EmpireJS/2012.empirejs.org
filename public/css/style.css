@@ -33,6 +33,13 @@ html {
   margin: 10px auto 0;
 }
 @media all and (max-width: 480px) {
+  
+  #container {
+    background: url(../img/ny-skyline.jpg) no-repeat center center;
+    background-size: auto 100%;
+    min-height: 900px;
+    height: 100%;
+  }
 
   #inner_container {
     padding-top: 20px;
