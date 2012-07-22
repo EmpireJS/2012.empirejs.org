@@ -6,25 +6,31 @@ html {
   background-size: cover;
 }
 
+p {
+  padding: 0;
+}
+
 #inner_container {
   margin: auto;
-  width: 500px;
-  height: 587px;
-  padding-top: 70px;
-  background: url(../img/logo_500.png) center bottom no-repeat;
+  width: 400px;
+  height: 470px;
+  padding-top: 5px;
+  background: url(../img/logo_400.png) center bottom no-repeat;
 }
 
 #main {
   width: 900px;
-  margin: 10px auto 0;
+  margin: 0 auto;
   color: #F3F4EC;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-shadow: 1px 1px 0px #000, 2px 2px 0px #737373;
 }
 
 #main h1 {
   font-weight: 800;
   font-family: 'Open Sans', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   text-shadow: 1px 1px 0px #000, 2px 2px 0px #737373;
 }
 
@@ -32,7 +38,7 @@ html {
   width: 100px;
   margin: 10px auto 0;
 }
-@media all and (max-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   
   #container {
     background: url(../img/ny-skyline.jpg) no-repeat center center;
@@ -52,3 +58,4 @@ html {
     width: 80%;
   }
 }
+
