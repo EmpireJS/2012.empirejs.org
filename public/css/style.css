@@ -35,9 +35,17 @@ p {
 }
 
 #jsconf {
-  width: 100px;
   margin: 10px auto 0;
+  float: right;
 }
+
+#jsconf span {
+  position: relative;
+  bottom: 40px;
+  right: 10px;
+  font-size: 13px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   
   #container {
@@ -56,6 +64,24 @@ p {
 
   #main {
     width: 80%;
+  }
+
+  #jsconf {
+    width: 100px;
+    margin: 10px auto 0;
+    float: none;
+  }
+
+  #jsconf img {
+    padding-top: 10px;
+  }
+
+  #jsconf span {
+    position: relative;
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    display: block
   }
 }
 
