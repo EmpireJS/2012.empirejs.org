@@ -6,36 +6,36 @@ html {
   background-size: cover;
 }
 
-p {
-  padding: 0;
-}
+p { padding: 0; }
 
 #inner_container {
   margin: auto;
   width: 400px;
   height: 470px;
-  padding-top: 5px;
+  padding-top: 15px;
   background: url(../img/logo_400.png) center bottom no-repeat;
 }
 
 #main {
-  width: 900px;
-  margin: 0 auto;
-  color: #F3F4EC;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  text-shadow: 1px 1px 0px #000, 2px 2px 0px #737373;
+  margin: 5px auto 0 auto;
+  padding: 5px 0 12px 10px;
+  width: 900px;
 }
 
 #main h1 {
-  font-weight: 800;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
   font-size: 28px;
+  margin: 0 0 5px 0;
   text-shadow: 1px 1px 0px #000, 2px 2px 0px #737373;
 }
 
 #jsconf {
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   float: right;
 }
 
@@ -44,10 +44,15 @@ p {
   bottom: 40px;
   right: 10px;
   font-size: 13px;
+  text-shadow: none;
+}
+
+.bold {
+  font-style: italic;
+  font-weight: bold;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  
   #container {
     background: url(../img/ny-skyline.jpg) no-repeat center center;
     background-size: auto 100%;
