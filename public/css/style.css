@@ -1,42 +1,155 @@
 html {
-  background: url(../img/ny-skyline.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(/img/dirty_bg.png) rgb(42,42,42);
 }
 
-p { padding: 0; }
+p { padding: 0 }
+
+
+input {
+  margin: 2px 0 10px;
+}
+
+label {
+  color: rgb(174,174,174);
+}
+
+h2 a:hover {
+  background: rgb(42,42,42);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.twitter {
+  opacity: 0.8;
+
+  position: absolute;
+  top: -2px;
+  right: 1px;
+}
+
+a.button {
+  padding: 8px 20px;
+  background-color: rgb(65,65,65);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 800;;
+  border-radius: 4px;
+  border: 1px solid rgba(40, 40, 40, 0.5);
+}
+
+a:hover.button {
+  background-color: rgb(80,80,80);
+}
+
+/*.button:before {
+  content: "";
+  border: 2px solid #000;
+  position: absolute;
+  display: block;
+
+}*/
+
+#container {
+  padding-top: 25px;
+}
+
+#skyline_container {
+  width: 991px;
+  height: 500px;
+  background: url(/img/skyline_resize.jpg);
+  margin: auto;
+  box-shadow: 1px 1px 6px black;
+  moz-box-shadow: 1px 1px 6px black;
+  webkit-box-shadow: 1px 1px 6px black;
+}
 
 #inner_container {
   margin: auto;
   width: 400px;
   height: 470px;
   padding-top: 15px;
-  background: url(../img/logo_400.png) center bottom no-repeat;
+  background: url(/img/logo_400.png) center bottom no-repeat;
 }
 
 #main {
-  background-color: rgba(0, 0, 0, 0.7);
+  position: relative;
   color: #FFF;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 5px auto 0 auto;
   padding: 5px 0 12px 10px;
-  width: 900px;
+  width: 991px;
 }
 
-#main h1 {
+#main h1, #main h2 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 28px;
   margin: 0 0 5px 0;
-  text-shadow: 1px 1px 0px #000, 2px 2px 0px #737373;
+  text-align: center;
+  text-transform: uppercase;
+  clear: both;
+}
+
+#main h2 {
+  font-size: 20px;
+  color: rgb(175,175,175);
+}
+
+#main p.tickets {
+  padding-top: 20px;
+  text-align: center;
+}
+
+
+#content {
+  padding-top: 50px;
+  width: 990px;
+}
+
+#content p {
+  padding-bottom: 20px;
+}
+
+#content textarea {
+  margin-bottom: 5px;
+}
+
+#content form {
+  margin-bottom: 20px;
+}
+
+#content .left {
+  float: left;
+  width: 445px;
+}
+
+#content .right {
+  float: right;
+  width: 400px;
+}
+
+#content .right p, #content .right {
+  padding-bottom: 40px;
+}
+
+.form_result {
+  padding-bottom: 50px;
+}
+
+.map {
+  border: 3px solid rgb(255,255,255);
+  margin-bottom: 20px;
 }
 
 #jsconf {
-  margin: 20px auto 0;
-  float: right;
+  width:156px;
+  margin: auto;
+}
+
+#jsconf img {
+  width: 100px;
+  padding-bottom: 20px;
 }
 
 #jsconf span {
@@ -51,42 +164,3 @@ p { padding: 0; }
   font-style: italic;
   font-weight: bold;
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #container {
-    background: url(../img/ny-skyline.jpg) no-repeat center center;
-    background-size: auto 100%;
-    min-height: 900px;
-    height: 100%;
-  }
-
-  #inner_container {
-    padding-top: 20px;
-    width: 300px;
-    height: 352px;
-    background: url(../img/logo_300.png) center bottom no-repeat;
-  }
-
-  #main {
-    width: 80%;
-  }
-
-  #jsconf {
-    width: 100px;
-    margin: 10px auto 0;
-    float: none;
-  }
-
-  #jsconf img {
-    padding-top: 10px;
-  }
-
-  #jsconf span {
-    position: relative;
-    top: 10px;
-    bottom: 0;
-    right: 0;
-    display: block
-  }
-}
-
