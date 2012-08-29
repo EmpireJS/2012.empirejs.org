@@ -160,6 +160,40 @@ a:hover.button {
   text-shadow: none;
 }
 
+.speakers {
+  clear: both;
+  max-width: 950px;
+  margin: auto;
+  text-align: justify;
+  color: #AEAEAE;
+}
+
+.speakers p {
+  padding-bottom: 0 !important;
+}
+
+.speakers h2 {
+  padding-bottom: 10px;
+}
+
+.speakers div {
+  display: inline-block;
+  text-align: center;
+}
+
+.speakers img {
+  box-shadow: 1px 1px 6px black;
+  moz-box-shadow: 1px 1px 6px black;
+  webkit-box-shadow: 1px 1px 6px black;
+  margin-bottom: 5px;
+}
+  
+.speakers:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+
 .bold {
   font-style: italic;
   font-weight: bold;
