@@ -115,8 +115,17 @@ a:hover.button {
   margin-bottom: 5px;
 }
 
-#content form {
+#content form, input.number {
   margin-bottom: 20px;
+}
+
+.telephone {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.telephone form {
+  margin-bottom: 15px;
 }
 
 #content .left {

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EmpireJS</title>
+    <meta name="description" content="A one-day Javascript conference in NYC, showcasing the best of what the Javascript community has to offer.">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <script src="js/modernizr-2.5.3.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="main">
+
+      <div class="telephone">
+          <form id="number_form" action="/phone" method="POST">
+            <label>Number</label>
+            <input type="text" name="telephone_number" class="number" />
+            <a id="number_submit" class="button" href="#">Submit</a>
+          </form>
+	  <span class="form_result"></span>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+$('#number_form').on('submit', phone_submit)
+$('.button').on('click', phone_submit)
+
+function phone_submit (e) {
+  e.preventDefault()
+  var serial = $('#number_form').serialize()
+  $.post('/phone', serial, function (d) {
+    $('span.form_result').html(d).hide().fadeIn('fast')
+  })
+}
+</script>
+</html>
