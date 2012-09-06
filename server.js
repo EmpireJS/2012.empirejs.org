@@ -16,21 +16,6 @@ var server = union.createServer({
   ]
 })
 
-router.post(/\//, function () {
-  var self = this
-  var data = this.req.body
-
-  empire_db.insert({details: data}, function (err, body, headers) {
-    self.res.writeHead(200, { 'Content-Type': 'text/plain' })
-    if (err) {
-      self.res.end('Error submitting proposal. Please try again later.')
-      return
-    }
-    self.res.end('Talk Proposal Submitted')
-  })
-
-})
-
 router.post(/phone/, function () {
   var self = this
   var data = this.req.body

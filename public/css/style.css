@@ -2,6 +2,10 @@ html {
   background: url(/img/dirty_bg.png) rgb(42,42,42);
 }
 
+body, h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+
 p { padding: 0 }
 
 
@@ -21,7 +25,6 @@ h2 a:hover {
 
 .twitter {
   opacity: 0.8;
-
   position: absolute;
   top: -2px;
   right: 1px;
@@ -40,14 +43,6 @@ a.button {
 a:hover.button {
   background-color: rgb(80,80,80);
 }
-
-/*.button:before {
-  content: "";
-  border: 2px solid #000;
-  position: absolute;
-  display: block;
-
-}*/
 
 #container {
   padding-top: 25px;
@@ -74,7 +69,6 @@ a:hover.button {
 #main {
   position: relative;
   color: #FFF;
-  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 5px auto 0 auto;
   padding: 5px 0 12px 10px;
@@ -82,7 +76,6 @@ a:hover.button {
 }
 
 #main h1, #main h2 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 28px;
   margin: 0 0 5px 0;
@@ -119,6 +112,10 @@ a:hover.button {
   margin-bottom: 20px;
 }
 
+p.cfp {
+  padding-top: 50px;
+}
+
 .telephone {
   width: 300px;
   margin: 0 auto;
@@ -152,7 +149,7 @@ a:hover.button {
 }
 
 #jsconf {
-  width:156px;
+  width:100px;
   margin: auto;
 }
 
@@ -167,6 +164,13 @@ a:hover.button {
   right: 10px;
   font-size: 13px;
   text-shadow: none;
+}
+
+p.jsconf {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  
 }
 
 .speakers {
