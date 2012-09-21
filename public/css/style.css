@@ -149,8 +149,8 @@ p.cfp {
 }
 
 #jsconf {
-  width:100px;
-  margin: auto;
+  width: 100px;
+  margin: 0 auto;
 }
 
 #jsconf img {
@@ -170,7 +170,7 @@ p.jsconf {
   text-align: center;
   color: #fff;
   font-size: 14px;
-  
+  padding-bottom: 10px;
 }
 
 .speakers {
