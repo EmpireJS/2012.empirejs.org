@@ -14,21 +14,36 @@
 </head>
 <body>
   <div id="container">
-    <div id="skyline_container">
-      <div id="inner_container">
-      </div>
-    </div>
+    <!-- NAVIGATION -->
+    <nav id="page-nav" class="alt">
+      <div>
+        <ul>
+          <li class="active"><a href="#/welcome" title="Welcome"><img src="img/favicon.ico" width="40" height="40" /></a></li>
+          <li><a href="#/information" title="Information">Information</a></li>
+          <li><a href="#/speakers" title="Speakers">Speakers</a></li>
+          <li><a href="#/schedule" title="Schedule">Schedule</a></li>
+          <li><a href="#/sponsors" title="Sponsors">Sponsors</a></li>
+          <li><a href="#/tickets" title="Tickets">Tickets</a></li>
+          <li><a href="#/contacts" title="Contacts">Contacts</a></li>
+        </ul>
+      </div> 
+    </nav><!-- /nav -->
+
     <div id="main" itemscope itemtype="http://schema.org/Event">
-      <a class="twitter" href="http://twitter.com/empirejs"><img src="/img/twitter.png" alt /></a>
-      <meta itemprop="name" content="EmpireJS">
-      <meta itemprop="startDate" content="2012-10-22">
-      <meta itemprop="location" content="The Altman Building, NYC">
-      <h1>October 22, 2012</h1>
-      <h2><a href="http://maps.google.com/maps?q=altman+building&fb=1&gl=us&hq=altman+building&hnear=0x89c24fa5d33f083b:0xc80b8f06e177fe62,New+York,+NY&cid=0,0,6401999759563279041&t=m&z=16&iwloc=A">The Altman Building</a></h2>
-      <p class="tickets">
-        <a class="button" href="https://tito.io/empirejs/empirejs-2012">tickets</a>
-      </p>
-      <div id="content">
+      <div id="welcome">
+        <div id="skyline_container">
+          <div id="inner_container">
+          </div>
+        </div>
+        <a class="twitter" href="http://twitter.com/empirejs"><img src="/img/twitter.png" alt /></a>
+        <meta itemprop="name" content="EmpireJS">
+        <meta itemprop="startDate" content="2012-10-22">
+        <meta itemprop="location" content="The Altman Building, NYC">
+        <h1>October 22, 2012</h1>
+        <h2><a href="http://maps.google.com/maps?q=altman+building&fb=1&gl=us&hq=altman+building&hnear=0x89c24fa5d33f083b:0xc80b8f06e177fe62,New+York,+NY&cid=0,0,6401999759563279041&t=m&z=16&iwloc=A">The Altman Building</a></h2>      
+      </div>
+      
+      <div id="information" class="content">
         <div class="left">
 
 
@@ -42,7 +57,9 @@
           EmpireJS will be held at the Altman Building, in New York's Flatiron District.
           </p>
         </div>      
+      </div>
 
+      <div id="speakers" class="content">
 	      <div class="speakers">
           <h2>Speakers</h2>
     	    <div><img src="/img/speakers/ariya.gif" alt /><p>Ariya Hidayat</p></div>
@@ -56,7 +73,7 @@
     	  </div>
     	  <div class="speakers">
     	    <div><img src="/img/speakers/rick.png" alt /><p>Rick Waldron</p></div>
-    	    <div><img src="/img/speakers/substack.gif" alt /><p>Substack</p></div>
+    	    <div><img src="/img/speakers/substack.gif" alt /><p>James Halliday</p></div>
     	    <div><img src="/img/speakers/sexton.gif" alt /><p>Alex Sexton</p></div>
     	  </div>
         <div class="speakers">
@@ -94,15 +111,15 @@
 
       </div>
     </div>
-    <div id="jsconf">
-      <img src="/img/jsconf_100.png" alt />
-    </div>
-    <p class="jsconf">
-      Organized with the help of the JSConf Family.
-    </p>
-    
-    
-    
+
+    <footer>
+      <div id="jsconf">
+        <img src="/img/jsconf_100.png" alt />
+      </div>
+      <p class="jsconf">
+        Organized with the help of the JSConf Family.
+      </p>
+    </footer>
   </div>
 </body>
 </html>
