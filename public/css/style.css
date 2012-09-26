@@ -7,6 +7,7 @@ html {
 
 body, h1, h2, h3, h4 {
   font-family: 'Open Sans', sans-serif;
+  color: rgb(174, 174, 174);
 }
 
 p { padding: 0 }
@@ -167,7 +168,8 @@ p.cfp {
 
 #page-nav {
 	background-color: #AFAFAF;
-	background-color: rgba(153, 153, 153, .8);
+	background-color: rgba(42, 42, 42, .8);
+  box-shadow: 1px 0 3px black;
 	height: 50px;
 	width: 100%;
 	position: fixed;
@@ -253,29 +255,113 @@ p.cfp {
   display: inline-block;
 }
 
-/* !3.3 Footer */
+.schedule {
+  width: 800px;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid rgb(57, 57, 57);
+  padding: 0 170px;
+  min-height: 600px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+}
 
-#jsconf {
-  width: 100px;
+.schedule table {
+  width: 800px;
   margin: 0 auto;
 }
 
-#jsconf img {
-  width: 100px;
-  padding-bottom: 20px;
-}
-
-#jsconf span {
-  position: relative;
-  bottom: 40px;
-  right: 10px;
-  font-size: 13px;
-  text-shadow: none;
-}
-
-p.jsconf {
+.schedule table tr td {
   text-align: center;
-  color: #fff;
-  font-size: 14px;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 20px;
+  border-bottom: 1px solid rgb(57, 57, 57);
 }
+
+
+#deco_left, #deco_left .deco, #deco_left .deco2, #deco_left .deco3 {
+  position: absolute;
+  left: 1px;
+}
+
+#deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
+  position: absolute;
+  right: 1px;
+}
+
+#deco_left .deco:before, #deco_left .deco2:before, #deco_left .deco3:before {
+  top: -2px;
+  position: absolute;
+  content: '';
+  height: 550px;
+  width: 15px;
+  border: 2px solid rgb(57, 57, 57);
+  border-left: 2px solid rgb(57, 57, 57);
+  background: url(/img/dirty_bg.png) rgb(42,42,42);
+  border-bottom-right-radius: 8px;
+  background-color: #2a2a2a;
+  background-image: -moz-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2a2a2a), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
+  box-shadow: 2px 2px 4px black;
+}
+
+#deco_left .deco:before {
+  left: -3px;
+}
+
+#deco_left .deco2:before {
+  left: 14px;
+  height: 440px;
+}
+
+#deco_left .deco3:before {
+  left: 31px;
+  height: 330px;
+}
+
+#deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
+  position: absolute;
+  right: 1px;
+}
+
+#deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
+  position: absolute;
+  right: 1px;
+}
+
+#deco_right .deco:before, #deco_right .deco2:before, #deco_right .deco3:before {
+  top: -2px;
+  position: absolute;
+  content: '';
+  height: 550px;
+  width: 15px;
+  border: 2px solid rgb(57, 57, 57);
+  border-right: 2px solid rgb(57, 57, 57);
+  background-color: #2a2a2a;
+  background-image: -moz-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2a2a2a), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
+  border-bottom-left-radius: 8px;
+  box-shadow: -2px 2px 4px black;
+}
+
+#deco_right .deco:before {
+  right: -3px;
+}
+
+#deco_right .deco2:before {
+  right: 14px;
+  height: 440px;
+}
+
+#deco_right .deco3:before {
+  right: 31px;
+  height: 330px;
+}
+
+
+
+/* !3.3 Footer */
