@@ -96,7 +96,6 @@ a:hover.button {
   font-size: 28px;
   margin: 0 0 5px 0;
   text-align: center;
-/*  text-transform: uppercase;*/
   clear: both;
 }
 
@@ -269,10 +268,11 @@ p.cfp {
   position: relative;
   border: 2px solid rgb(57, 57, 57);
   padding: 0 170px;
-  min-height: 600px;
+  min-height: 450px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 10px black;
+  margin-bottom: 80px;
 }
 
 .schedule table {
@@ -286,15 +286,28 @@ p.cfp {
   border-bottom: 1px solid rgb(57, 57, 57);
 }
 
+.schedule tr.highlight {
+  background-color: rgb(46, 46,	48);
+  background-image: -moz-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2a2a2a), to(#1c1c1c));
+  background-image: -webkit-linear-gradient(#2a2a2a, #1c1c1c);
+  background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
+}
+
+.schedule td.date {
+  font-family: 'Limelight', cursive;
+  font-size: 20px;
+}
+
 
 #deco_left, #deco_left .deco, #deco_left .deco2, #deco_left .deco3 {
   position: absolute;
-  left: 1px;
+  left: 0;
 }
 
 #deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
   position: absolute;
-  right: 1px;
+  right: 0;
 }
 
 #deco_left .deco:before, #deco_left .deco2:before, #deco_left .deco3:before {
@@ -331,12 +344,12 @@ p.cfp {
 
 #deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
   position: absolute;
-  right: 1px;
+  right: 0;
 }
 
 #deco_right, #deco_right .deco, #deco_right .deco2, #deco_right .deco3 {
   position: absolute;
-  right: 1px;
+  right: 0;
 }
 
 #deco_right .deco:before, #deco_right .deco2:before, #deco_right .deco3:before {
@@ -369,6 +382,49 @@ p.cfp {
   right: 31px;
   height: 330px;
 }
+
+
+.contacts {
+  clear: both;
+  max-width: 500px;
+  margin: auto;
+  text-align: justify;
+  color: #AEAEAE;
+}
+
+.contacts h1 {
+  padding-bottom: 10px;
+  font-family: 'Limelight', cursive;
+  text-align: center;
+  font-size: 28px;
+}
+
+.contacts p {
+  padding-bottom: 0 !important;
+}
+
+.contacts h2 {
+  padding-bottom: 10px;
+}
+
+.contacts div {
+  display: inline-block;
+  text-align: center;
+}
+
+.contacts img {
+  box-shadow: 1px 1px 6px black;
+  moz-box-shadow: 1px 1px 6px black;
+  webkit-box-shadow: 1px 1px 6px black;
+  margin-bottom: 5px;
+}
+  
+.contacts:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+}
+
 
 
 
