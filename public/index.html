@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" />
     <script src="js/modernizr-2.5.3.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery-1.6.4.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
     <script type="text/javascript" src="js/director-1.1.6.min.js"></script>
 </head>
@@ -173,23 +173,42 @@
         
       </div>
       
-      <div class="contacts">
+      <div id="sponsors" class="sponsors">
+        <h1>Sponsors</h1>
+        <img width="300" src="img/bloomberg.png" alt />
+        <img width="200" src="img/microsoft.png" alt />
+        <img width="150" src="img/onswipe.png" alt />
+        <img width="110" src="img/fueled.png" alt />
+        <img src="img/basho.png" alt />
+        <img src="img/joyent.png" alt />
+        <img src="img/chartbeat.png" alt />
+        <img src="img/iriscouch.png" alt />
+        <img width="150" src="img/saucelabs.png" alt />
+      </div>
+      
+      <div class="contacts" id="contacts">
         
-        <h1>Contacts</h1>
+        <h1>EmpireJS Contacts</h1>
         
         <div class="contact">
-          <img src="img/charlie.png">
+          <img class="avatar" src="img/charlie.png" alt />
           <p>Charlie Robbins</p>
+          <a href="http://twitter.com/indexzero"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:charlie.robbins@gmail.com"><img src="img/email.png" alt /></a>
         </div>
         
         <div class="contact">
-          <img src="img/luke.png">
+          <img class="avatar" src="img/luke.png" alt />
           <p>Luke Arduini</p>
+          <a href="http://twitter.com/st_luke"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:st_luke@me.com"><img src="img/email.png" alt /></a>
         </div>
         
         <div class="contact">
-          <img src="img/ana.png">
+          <img class="avatar" src="img/ana.png" alt />
           <p>Ana Hevesi</p>
+          <a href="http://twitter.com/anoemi"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:ana.noemi.hevesi@gmail.com"><img src="img/email.png" alt /></a>
         </div>
         
       </div>
@@ -202,7 +221,7 @@
   <script>
     var run_route = function () {
       var route = window.location.hash.slice(2)
-      $.scrollTo('#' + route, 500)
+      $.scrollTo('#' + route, 500, {offset: -75})
     }
 
     var routes = {
