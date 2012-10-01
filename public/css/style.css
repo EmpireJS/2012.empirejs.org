@@ -25,6 +25,8 @@ h2 a:hover {
   background: rgb(42,42,42);
   padding: 5px 10px;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }
 
 .bold {
@@ -46,6 +48,8 @@ a.button {
   font-size: 20px;
   font-weight: 800;;
   border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
   border: 1px solid rgba(40, 40, 40, 0.5);
 }
 
@@ -171,6 +175,8 @@ p.cfp {
 	background-color: #AFAFAF;
 	background-color: rgba(42, 42, 42, .8);
   box-shadow: 1px 0 3px black;
+  -webkit-box-shadow: 1px 0 3px black;
+  -moz-box-shadow: 1px 0 3px black;
 	height: 50px;
 	width: 100%;
 	position: fixed;
@@ -272,6 +278,8 @@ p.cfp {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 3px 3px 10px black;
+  -webkit-box-shadow: 3px 3px 10px black;
+  -moz-box-shadow: 3px 3px 10px black;
   margin-bottom: 80px;
 }
 
@@ -326,6 +334,8 @@ p.cfp {
   background-image: -webkit-linear-gradient(#2a2a2a, #1c1c1c);
   background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
   box-shadow: 2px 2px 4px black;
+  -webkit-box-shadow: 2px 2px 4px black;
+  -moz-box-shadow: 2px 2px 4px black;
 }
 
 #deco_left .deco:before {
@@ -367,6 +377,8 @@ p.cfp {
   background-image: -o-linear-gradient(#2a2a2a, #1c1c1c);
   border-bottom-left-radius: 8px;
   box-shadow: -2px 2px 4px black;
+  -webkit-box-shadow: -2px 2px 4px black;
+  -moz-box-shadow: -2px 2px 4px black;
 }
 
 #deco_right .deco:before {
