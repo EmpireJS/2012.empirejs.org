@@ -1,7 +1,7 @@
 {
   "name": "empirejs",
   "description": "Homepage for empirejs.org",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "repository": {
     "type": "git",
     "url": "http://github.com/indexzero/empirejs.org.git"
