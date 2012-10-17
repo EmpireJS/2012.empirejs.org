@@ -6,29 +6,47 @@
     <meta name="description" content="A one-day Javascript conference in NYC, showcasing the best of what the Javascript community has to offer.">
     <meta name="viewport" content="width=device-width">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="/img/favicon.ico" />
     <script src="js/modernizr-2.5.3.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+    <script type="text/javascript" src="js/director-1.1.6.min.js"></script>
 </head>
 <body>
   <div id="container">
-    <div id="skyline_container">
-      <div id="inner_container">
-      </div>
-    </div>
+    <!-- NAVIGATION -->
+    <nav id="page-nav" class="alt">
+      <div>
+        <ul>
+          <li class="active"><a href="#/welcome" title="Welcome"><img src="img/favicon.ico" width="40" height="40" /></a></li>
+          <li><a href="#/information" title="Information">Information</a></li>
+          <li><a href="#/speakers" title="Speakers">Speakers</a></li>
+          <li><a href="#/schedule" title="Schedule">Schedule</a></li>
+          <li><a href="#/sponsors" title="Sponsors">Sponsors</a></li>
+          <li><a href="https://tito.io/empirejs/empirejs-2012" title="Tickets">Tickets</a></li>
+          <li><a href="#/contacts" title="Contacts">Contacts</a></li>
+        </ul>
+      </div> 
+    </nav><!-- /nav -->
+
     <div id="main" itemscope itemtype="http://schema.org/Event">
-      <a class="twitter" href="http://twitter.com/empirejs"><img src="/img/twitter.png" alt /></a>
-      <meta itemprop="name" content="EmpireJS">
-      <meta itemprop="startDate" content="2012-10-22">
-      <meta itemprop="location" content="The Altman Building, NYC">
-      <h1>October 22, 2012</h1>
-      <h2><a href="http://maps.google.com/maps?q=altman+building&fb=1&gl=us&hq=altman+building&hnear=0x89c24fa5d33f083b:0xc80b8f06e177fe62,New+York,+NY&cid=0,0,6401999759563279041&t=m&z=16&iwloc=A">The Altman Building</a></h2>
-      <p class="tickets">
-        <a class="button" href="https://tito.io/empirejs/empirejs-2012">tickets</a>
-      </p>
-      <div id="content">
+      <div id="welcome">
+        <div id="skyline_container">
+          <div id="inner_container">
+          </div>
+        </div>
+        <a class="twitter" href="http://twitter.com/empirejs"><img src="/img/twitter.png" alt /></a>
+        <meta itemprop="name" content="EmpireJS">
+        <meta itemprop="startDate" content="2012-10-22">
+        <meta itemprop="location" content="The Altman Building, NYC">
+        <h1>October 22, 2012</h1>
+        <h2><a href="http://maps.google.com/maps?q=altman+building&fb=1&gl=us&hq=altman+building&hnear=0x89c24fa5d33f083b:0xc80b8f06e177fe62,New+York,+NY&cid=0,0,6401999759563279041&t=m&z=16&iwloc=A">The Altman Building</a></h2>      
+      </div>
+      
+      <div id="information" class="content">
         <div class="left">
 
 
@@ -37,14 +55,16 @@
         </div>
         <div class="right"><p>
           <a href="http://maps.google.com/maps?q=The+Altman+Building%2C+135+West+18th+St.%2C+135+West+18th+St.+New+York%2C+New+York%2C+10011">
-          <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?size=350x200&maptype=roadmap%5C&center=40.73093079244957%2C-73.99091268312634&markers=size:mid%7Ccolor:red%7CThe+Altman+Building%2C+135+West+18th+St.%2C+135+West+18th+St.+New+York%2C+New+York%2C+10011&sensor=false&zoom=11" alt />
+          <img class="map" src="img/location.png" alt />
           </a>
           EmpireJS will be held at the Altman Building, in New York's Flatiron District.
           </p>
         </div>      
+      </div>
 
+      <div id="speakers" class="content">
 	      <div class="speakers">
-          <h2>Speakers</h2>
+          <h1>Speakers</h1>
     	    <div><img src="/img/speakers/ariya.gif" alt /><p>Ariya Hidayat</p></div>
     	    <div><img src="/img/speakers/max.gif" alt /><p>Max Ogden</p></div>
     	    <div><img src="/img/speakers/charlie.gif" alt /><p>Charlie McConnell</p></div>
@@ -56,7 +76,7 @@
     	  </div>
     	  <div class="speakers">
     	    <div><img src="/img/speakers/rick.png" alt /><p>Rick Waldron</p></div>
-    	    <div><img src="/img/speakers/substack.gif" alt /><p>Substack</p></div>
+    	    <div><img src="/img/speakers/substack.gif" alt /><p>James Halliday</p></div>
     	    <div><img src="/img/speakers/sexton.gif" alt /><p>Alex Sexton</p></div>
     	  </div>
         <div class="speakers">
@@ -65,27 +85,26 @@
     	    <div><img src="/img/speakers/shtylman.png" alt /><p>Roman Shtylman</p></div>
     	  </div>
     	  <div class="speakers">
-    	    <div><img src="/img/speakers/dean.png" alt /><p>Dean McNamee</p></div>
+    	    <div><img src="/img/speakers/mike.png" alt /><p>Mike Taylor</p></div>
+    	    <div><img src="/img/speakers/lance.png" alt /><p>Lance Pollard</p></div>
+    	    <div><img src="/img/speakers/domenic.png" alt /><p>Domenic Denicola</p></div>
+    	  </div>
+    	  <div class="speakers">
+    	    <div><img src="/img/speakers/ben.png" alt /><p>Ben Alman</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	  </div>
         
         <div class="speakers">
-          <h2>Still 11 more speakers to be announced!</h2>
+          <h2>Still 7 more speakers to be announced!</h2>
         </div>
         
-    	  <div class="speakers">
-    	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
-    	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
-    	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
-    	  </div>
         <div class="speakers">
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	  </div>
     	  <div class="speakers">
-    	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	    <div><img src="/img/speakers/mystery.gif" alt /><p>&nbsp;</p></div>
     	  </div>
@@ -93,16 +112,133 @@
         
 
       </div>
-    </div>
-    <div id="jsconf">
-      <img src="/img/jsconf_100.png" alt />
-    </div>
-    <p class="jsconf">
-      Organized with the help of the JSConf Family.
-    </p>
-    
-    
-    
+   </div>
+      
+      <!-- schedule -->
+      
+      <div id="schedule" class="schedule">
+        <div id="deco_left">
+          <span class="deco"></span>
+          <span class="deco2"></span>
+          <span class="deco3"></span>
+        </div>
+        <div id="deco_right">
+          <span class="deco"></span>
+          <span class="deco2"></span>
+          <span class="deco3"></span>
+        </div>
+        
+        <table>
+          <tr class="highlight">
+            <td class="date" colspan="3">October 21</td>
+          </tr>
+          <tr>
+            <td>7PM-10PM</td> <td colspan="2">Pre-party at the Brooklyn Brewery</td>
+          </tr>
+          
+          <tr class="highlight">
+            <td class="date" colspan="3">October 22</td>
+          </tr>
+          
+          <tr>
+            <td></td> <td>Track I</td> <td>Track II</td>
+          </tr>
+
+          <tr class="highlight">
+            <td>09:00 - 10:00</td> <td colspan="2">Registration &amp; Coffee</td>
+          </tr>
+          <tr>
+            <td>10:00 - 11:45</td> <td>languages.js</td> <td>tools.js</td>
+          </tr>
+          <tr class="highlight">
+            <td>11:45 - 12:45</td> <td colspan="2">Lunch</td>
+          </tr>
+          <tr>
+            <td>12:45 - 2:30</td> <td>mad-science.js</td> <td>cloud.js</td>
+          </tr>
+          <tr class="highlight">
+            <td>2:30 - 3:00</td> <td colspan="2">Coffee</td>
+          </tr>
+          <tr>
+            <td>3:00 - 4:45</td> <td>hardware.js</td> <td>potpourri.js</td>
+          </tr>
+          <tr class="highlight">
+            <td>4:45 - 5:00</td> <td colspan="2">Break</td>
+          </tr>
+          <tr>
+            <td>5:00 - 6:30</td> <td>community.js</td> <td>front-end.js</td>
+          </tr>
+        </table>
+        
+      </div>
+      
+      <div id="sponsors" class="sponsors">
+        <h1>Sponsors</h1>
+        <a href="http://bloomberg.com/"><img width="300" src="img/bloomberg.png" alt /></a>
+        <a href="http://windowsazure.com"><img width="250" src="img/microsoft.png" alt /></a>
+        <a href="http://onswipe.com"><img width="150" src="img/onswipe.png" alt /></a>
+        <a href="http://fueled.com"><img width="110" src="img/fueled.png" alt /></a>
+        <a href="http://basho.com"><img src="img/basho.png" alt /></a>
+        <a href="http://joyent.com"><img src="img/joyent.png" alt /></a>
+        <a href="http://chartbeat.com"><img src="img/chartbeat.png" alt /></a>
+        <a href="http://iriscouch.com"><img src="img/iriscouch.png" alt /></a>
+        <a href="http://adobe.com"><img src="img/adobe.png" alt /></a>
+      </div>
+      
+      <div class="contacts" id="contacts">
+        
+        <h1>EmpireJS Contacts</h1>
+        
+        <div class="contact">
+          <img class="avatar" src="img/charlie.png" alt />
+          <p>Charlie Robbins</p>
+          <a href="http://twitter.com/indexzero"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:charlie.robbins@gmail.com"><img src="img/email.png" alt /></a>
+        </div>
+        
+        <div class="contact">
+          <img class="avatar" src="img/luke.png" alt />
+          <p>Luke Arduini</p>
+          <a href="http://twitter.com/st_luke"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:st_luke@me.com"><img src="img/email.png" alt /></a>
+        </div>
+        
+        <div class="contact">
+          <img class="avatar" src="img/ana.png" alt />
+          <p>Ana Hevesi</p>
+          <a href="http://twitter.com/anoemi"><img src="img/twitter.png" alt /></a>
+          <a href="mailto:ana.noemi.hevesi@gmail.com"><img src="img/email.png" alt /></a>
+        </div>
+        
+      </div>
+
+
+    <footer>
+    </footer>
   </div>
+  
+  <script>
+    var run_route = function () {
+      var route = window.location.hash.slice(2)
+      $.scrollTo('#' + route, 500, {offset: -75})
+    }
+
+    var routes = {
+      'welcome': run_route
+    , '/information': run_route
+    , '/speakers': run_route 
+    , '/schedule': run_route
+    , '/sponsors': run_route
+    , '/contacts': run_route
+    }
+      
+
+      
+    var router = Router(routes)
+      
+    router.init()
+  </script>
+  
+  
 </body>
 </html>
