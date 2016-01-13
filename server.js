@@ -4,8 +4,11 @@ var union    = require('union')
 
 var router    = new director.http.Router()
 
+var port = process.env.PORT || 8090;
+
 var server = union.createServer({
   before: [
+    require('morgan')('combined'),
     ecstatic(__dirname + '/public'),
     function (req, res) {
       router.dispatch(req,res)
@@ -13,4 +16,7 @@ var server = union.createServer({
   ]
 })
 
-server.listen(8080)
+server.listen(port, function (err) {
+  if (err) { throw err; }
+  console.log('2014.empirejs.org running on %s', port);
+});
